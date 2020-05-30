@@ -1,0 +1,88 @@
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 99vh;
+  width: 100%;
+}
+
+.wrapper {
+  width: 300px;
+  height: 200px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff5200;
+}
+
+.react-button {
+  width: 150px;
+  height: 60px;
+  outline: none;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bolder;
+  border: none;
+  box-shadow: 10px 12px 9px 3px #0e3445c9;
+  transition: box-shadow 0.3s ease-in;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 4px 5px 3px 1px #0e3445c9;
+    transition: box-shadow 0.3s ease-in;
+  }
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #3b6978;
+  box-shadow: 4px 14px 6px 3px #0e3445c9;
+  transition: box-shadow 0.3s ease-in;
+  color: #00bcd4;
+
+  &:hover {
+    box-shadow: 2px 5px 4px 0px #0e3445c9;
+    transition: box-shadow 0.3s ease-in;
+  }
+}
+
+.rectangle {
+  background: #00a1ab;
+  color: #00a1ab;
+}
+
+.primary {
+  background: #e84a5f;
+  color: #00a1ab;
+}
+
+.secondary {
+  background: #2b580c;
+  color: #f3c623;
+}
+
+.secondary {
+  background: #2b580c;
+  color: #f3c623;
+}
+
+.link {
+  width: 120px;
+  height: fit-content;
+  padding: 15px 0;
+  text-decoration: none;
+  text-align: center;
+  background: #79d70f;
+  color: #1b6ca8;
+}
+
+.disabled {
+  background: #f7f7f7;
+  box-shadow: none;
+  &:hover {
+    box-shadow: none;
+  }
+}
