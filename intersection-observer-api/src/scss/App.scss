@@ -1,0 +1,16 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+  // padding-bottom: 2em;
+}
+
+.repo {
+  border: 2px solid #064751;
+  width: 500px;
+  padding: 20px;
+  color: #126a65;
+  background-color: #57ccc6;
+  border-radius: 10px;
+}
