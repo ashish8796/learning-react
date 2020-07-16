@@ -1,6 +1,6 @@
 import { ADD_TODO, COMPLETED_TODO, DELETE_TODO } from "./types";
 
-let initialState = [];
+const initState = [];
 
 export const actions = {
   addTodo(todo) {
@@ -30,7 +30,7 @@ export const actions = {
 }
 
 
-export default function todos(state = initialState, action) {
+export default function todos(state = initState, action) {
   switch (action.type) {
 
     case ADD_TODO: {
