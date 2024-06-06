@@ -1,0 +1,9 @@
+Problem Statement: Optimize a Large List Rendering
+Description:
+You have a React application that displays a list of thousands of items. Each item is a complex component with various nested elements and event handlers.
+
+Tasks:
+
+Optimize the rendering of the list to ensure smooth scrolling.
+Implement techniques such as windowing (using libraries like react-window or react-virtualized).
+Minimize re-renders of individual list items when the list is updated.
