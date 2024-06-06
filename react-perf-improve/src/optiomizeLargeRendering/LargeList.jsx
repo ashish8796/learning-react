@@ -17,7 +17,7 @@ export default function LargeList() {
 
   return (
     <div>
-      <List itemCount={items.length} height={1000} itemSize={70} width={300}>
+      <List itemCount={3} height={100} itemSize={70} width={300}>
         {ListItem}
       </List>
     </div>
