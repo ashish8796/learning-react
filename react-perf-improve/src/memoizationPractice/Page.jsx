@@ -7,7 +7,6 @@ import {
 } from "react";
 
 const Profile = memo(function Profile({ person }) {
-  console.log("Log in Profile");
   return <></>;
 });
 
@@ -17,16 +16,12 @@ const SetCounterFromChild = memo(
       ref,
       () => {
         return {
-          refInvoked() {
-            console.log("Ref is invoked.");
-          },
+          refInvoked() {},
         };
       },
       []
     );
-    useEffect(() => {
-      console.log("Log in child.");
-    }, []);
+    useEffect(() => {}, []);
     return <></>;
   })
 );
@@ -38,16 +33,8 @@ function Page() {
     ref.current.refInvoked();
   };
 
-  useEffect(() => {
-    console.log("Log in parent.");
-    console.log(ref.current);
-  }, []);
-
   return (
     <>
-      {/* <button onClick={handleChangePerson}>Change person</button> */}
-
-      {/* <Profile person={person} /> */}
       <button onClick={handleClickMe}>Click me</button>
       <SetCounterFromChild handleClick={handleClickMe} ref={ref} />
     </>

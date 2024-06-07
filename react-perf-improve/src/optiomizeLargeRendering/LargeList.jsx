@@ -8,13 +8,10 @@ const items = Array.from({ length: 10000 }, (_, id) => ({
 
 const ListItem = memo(({ index, style }) => {
   const item = items[index];
-  console.log("Rendering item:", item.id);
   return <div style={style}>{item.name}</div>;
 });
 
 export default function LargeList() {
-  console.log(items.length);
-
   return (
     <div>
       <List itemCount={3} height={100} itemSize={70} width={300}>

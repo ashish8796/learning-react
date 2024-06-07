@@ -1,6 +1,8 @@
-import './App.css';
-import MemoizationPractice from './memoizationPractice/MemoizationPractice';
-import OptimizeLargeRendering from './optiomizeLargeRendering/OptimizeLargeRendering';
+import "./App.css";
+import LazyLoadingPractice from "./lazyLoadingPractice/LazyLoadingPractice";
+import MemoizationPractice from "./memoizationPractice/MemoizationPractice";
+import OptimizeLargeRendering from "./optiomizeLargeRendering/OptimizeLargeRendering";
+import ReactComponentPractice from "./reactComponentsPractice/ReactComponentPractice";
 
 function App() {
   return (
@@ -8,6 +10,8 @@ function App() {
       <header className="App-header">
         <OptimizeLargeRendering />
         <MemoizationPractice />
+        <ReactComponentPractice />
+        <LazyLoadingPractice />
       </header>
     </div>
   );
